@@ -57,13 +57,23 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3.5em;
   font-weight: 700;
   line-height: 40px;
-  color: #EEEEFF;
+  animation: fadeIn 1s ease-in-out;
+  color: #eeeeffe2;
   text-shadow: 0 0 1px #41277C, 0 0 15px rgba(238, 238, 255, 0.85);
 }
 .text h2 {
   font-weight: 700;
   font-size: 2.5em;
-  color: #97c28a;
+  color: #94c386;
+  animation: fadeIn 1s ease-in-out 0.5s;
+}
+@keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
 }
 
 .snow {
@@ -497,7 +507,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 30px;
-  background: #9FB4C7;
+  background: #abbbc9;
   border-radius: 0 0 5px 5px;
 }
 .quote {
@@ -508,10 +518,10 @@ h1, h2, h3, h4, h5, h6 {
   /*width: 900px;*/
   text-align: center;
   line-height: 1.4;
-  color: #9FB798;
-  animation: slideInUp .2s ease forwards;
+  color: #d9dbd8;
+  animation: slideInUpWithDelay 1s ease-in-out forwards;
 }
-@keyframes slideInUp {
+@keyframes slideInUpWithDelay {
         from {
             transform: translateY(100px); /* Start below the view */
             opacity: 0; /* Start invisible */
